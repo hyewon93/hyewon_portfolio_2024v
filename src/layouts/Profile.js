@@ -40,7 +40,7 @@ const Profile = () => {
     return (
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
             <Default>
-                <Stack direction="row" sx={{ backgroundColor: '#fff', width: '100%', height: '600px', mt: 20 , borderRadius: '15px', p: 10, display: 'flex', justifyContent: 'center'}}>
+                <Stack direction="row" sx={{ backgroundColor: '#fff', width: '100%', height: 'auto', mt: 20 , borderRadius: '15px', p: 10, display: 'flex', justifyContent: 'center', boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)'}}>
                     <Stack direction="column" sx={{ mr: 5 }}>
                         <Box sx={{ mt: 6, borderRadius: '70%', width: '300px', height: '300px', backgroundImage:`url(${profileImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></Box>
                         <Button onClick={handleButtonClick} sx={{ mt: 4, backgroundColor: '#802c86', color: '#fff', '&:hover': { backgroundColor: 'none', color: '#802c86' } }}><DownloadIcon sx={{ mr: 1 }} /> Resume/CV</Button>

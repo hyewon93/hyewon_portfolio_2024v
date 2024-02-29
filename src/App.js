@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import Profile from "./Components/Profile";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
-import Career from "./Components/Career";
+import Navbar from "./layouts/Navbar";
+import Home from "./layouts/Home";
+import Profile from "./layouts/Profile";
+import Skills from "./layouts/Skills";
+import Projects from "./layouts/Projects";
+import Career from "./layouts/Career";
 
 const App = () => {
   return (
