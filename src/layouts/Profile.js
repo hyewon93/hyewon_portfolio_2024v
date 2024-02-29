@@ -40,7 +40,7 @@ const Profile = () => {
     return (
         <Container sx={{ display: 'flex', justifyContent: 'center' }}>
             <Default>
-                <Stack direction="row" sx={{ backgroundColor: '#fff', width: '100%', height: 'auto', mt: 20 , borderRadius: '15px', p: 10, display: 'flex', justifyContent: 'center', boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)'}}>
+                <Stack direction="row" sx={{ backgroundColor: '#fff', width: '100%', height: 'auto', mt: 15 , borderRadius: '15px', p: 10, display: 'flex', justifyContent: 'center', boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)'}}>
                     <Stack direction="column" sx={{ mr: 5 }}>
                         <Box sx={{ mt: 6, borderRadius: '70%', width: '300px', height: '300px', backgroundImage:`url(${profileImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></Box>
                         <Button onClick={handleButtonClick} sx={{ mt: 4, backgroundColor: '#802c86', color: '#fff', '&:hover': { backgroundColor: 'none', color: '#802c86' } }}><DownloadIcon sx={{ mr: 1 }} /> Resume/CV</Button>
@@ -78,29 +78,27 @@ const Profile = () => {
                 </Stack>
             </Default>
             <Mobile>
-                <Stack direction="column" sx={{ backgroundColor: '#fff', width: '100%', height: 'auto', mt: 25 , borderRadius: '15px', p: 2, display: 'flex', justifyContent: 'center'}}>
-                    <Stack direction="row">
-                        <Stack direction="column"  sx={{ mr: 2 }}>
-                            <Box sx={{ mt: 6, borderRadius: '70%', width: '130px', height: '130px', backgroundImage:`url(${profileImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></Box>
+                <Stack direction="column" sx={{ backgroundColor: '#fff', width: '100%', overflowY: 'scroll', height: '450px', mt: 22, borderRadius: '15px', p: 2, display: 'flex', justifyContent: 'center'}}>
+                    <Stack direction="column">
+                        <Stack direction="column" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <Box sx={{ mt: 25, borderRadius: '70%', width: '150px', height: '150px', backgroundImage:`url(${profileImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}></Box>
                             <Button onClick={handleButtonClick} sx={{ mt: 4, backgroundColor: '#802c86', color: '#fff', fontSize: '12px', '&:hover': { backgroundColor: 'none', color: '#802c86' } }}><DownloadIcon fontSize='small' sx={{ mr: 1 }} /> Resume/CV</Button>
                         </Stack>
-                        <Stack direction="column" sx={{ maxWidth: '500px'}}>
-                            <Stack direction="column" spacing={1}>
-                                <Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>Hyewon Bae</Typography>
-                                <Typography variant='subtitle2' sx={{ fontWeight: 'bold' }}>Web Developer</Typography>
+                        <Stack direction="column" sx={{ mt: 3 }} spacing={1}>
+                            <Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>Hyewon Bae</Typography>
+                            <Typography variant='subtitle2' sx={{ fontWeight: 'bold' }}>Web Developer</Typography>
+                        </Stack>
+                        <Stack direction="column" sx={{ mt: 3 }} spacing={1}>
+                            <Stack direction="row">
+                                <LocationOnRoundedIcon fontSize='small' sx={{ mr: 1 }} />
+                                <Typography variant='body2' sx={{ fontSize: '13px'}}>Vancouver, BC, Canada</Typography>
                             </Stack>
-                            <Stack direction="column" sx={{ mt: 3 }} spacing={1}>
-                                <Stack direction="row">
-                                    <LocationOnRoundedIcon fontSize='small' sx={{ mr: 1 }} />
-                                    <Typography variant='body2' sx={{ fontSize: '13px'}}>Vancouver, BC, Canada</Typography>
-                                </Stack>
-                                <Stack direction="row">
-                                    <SchoolRoundedIcon fontSize='small' sx={{ mr: 1.5 }} />
-                                    <Box>
-                                        <Typography variant='body2' sx={{ fontSize: '13px'}}>Bachelor of Computer Science & Engineering</Typography>
-                                        <Typography variant='body2' sx={{ fontSize: '10px', mt: 1}}>at Hansie University, South Korea</Typography>
-                                    </Box>
-                                </Stack>
+                            <Stack direction="row">
+                                <SchoolRoundedIcon fontSize='small' sx={{ mr: 1.5 }} />
+                                <Box>
+                                    <Typography variant='body2' sx={{ fontSize: '13px'}}>Bachelor of Computer Science & Engineering</Typography>
+                                    <Typography variant='body2' sx={{ fontSize: '10px', mt: 1}}>at Hansie University, South Korea</Typography>
+                                </Box>
                             </Stack>
                         </Stack>
                     </Stack>

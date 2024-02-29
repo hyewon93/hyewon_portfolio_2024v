@@ -31,15 +31,6 @@ const Navbar = () => {
                                         </Button>
                                         <Box sx={{ backgroundColor: '#802c86', height: '2px', mr: 3, ml: 3, display: pathname === "/profile" ? 'block' : 'none' }}></Box>
                                     </Link>
-                                    <Link to="/skills" style={{ textDecoration: 'none' }}>
-                                        <Button 
-                                            key="Skills"
-                                            sx={{ mr: {xs: 1, sm: 3, md: 3}, ml: {xs: 1, sm: 3, md: 3}, mt: {xs: 1, sm: 3, md: 3}, mb: 1, color: '#000', fontSize: { xs: "10px", sm: "14px", md: "14px" }, fontWeight: pathname === "/skills" ? 'bold' : '', display: 'block', '&:hover': { fontWeight: 'bold', background: 'none' } }}
-                                        >
-                                            Skills
-                                        </Button>
-                                        <Box sx={{ backgroundColor: '#802c86', height: '2px', mr: 3, ml: 3, display: pathname === "/skills" ? 'block' : 'none' }}></Box>
-                                    </Link>
                                     <Link to="/projects" style={{ textDecoration: 'none' }}>
                                         <Button 
                                             key="Projects"
