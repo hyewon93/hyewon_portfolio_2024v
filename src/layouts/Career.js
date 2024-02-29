@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, Typography } from '@mui/material';
+import { Badge, Box, Button, Chip, Container, Stack, Typography } from '@mui/material';
 import { useState } from 'react';
 
 import mchn_logo from '../assets/mchn_logo.png';
@@ -39,7 +39,7 @@ const Career = () => {
                     <img src={mchn_logo} width="100px"/>
                   </Box>
 
-                  <Stack direction="column" spacing={2} sx={{ ml: 5, mt: 4 }}>
+                  <Stack direction="column" spacing={2} sx={{ ml: 5, mt: 3 }}>
                     <Typography variant='h4' sx={{ fontWeight: 'bold' }}>My Passion Media</Typography>
                     <Typography variant='h5' sx={{ fontWeight: 'bold' }}>2020-2023</Typography>
                   </Stack>
@@ -53,6 +53,17 @@ const Career = () => {
                   Since it was a small-scale development team, communication among team members was crucial, 
                   and I participated in numerous frontend projects in addition to backend development.
                 </Typography>
+                <Stack direction="row">
+                  <Badge sx={{ backgroundColor: '#777BB4', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>PHP</Badge>
+                  <Badge sx={{ backgroundColor: '#F7DF1E', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>JavaScript</Badge>
+                  <Badge sx={{ backgroundColor: '#009688', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>REST API</Badge>
+                  <Badge sx={{ backgroundColor: '#0769AD', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>jQuery</Badge>
+                  <Badge sx={{ backgroundColor: '#E34F26', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>HTML</Badge>
+                  <Badge sx={{ backgroundColor: '#1572B6', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>CSS</Badge>
+                  <Badge sx={{ backgroundColor: '#4479A1', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>MySQL</Badge>
+                  <Badge sx={{ backgroundColor: '#181717', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>Git</Badge>
+                  <Badge sx={{ backgroundColor: '#007FFF', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>MUI</Badge>
+                </Stack>
               </Stack>
               <Stack direction="column" spacing={2} sx={{ mt: 2, ml: 5}}>
               <Typography variant='h5' sx={{ fontWeight: 'bold', color: '#802c86' }}>Major Projects</Typography>
@@ -81,7 +92,7 @@ const Career = () => {
                     <img src={airsoft_logo} width="100px"/>
                   </Box>
 
-                  <Stack direction="column" spacing={2} sx={{ ml: 5, mt: 4 }}>
+                  <Stack direction="column" spacing={2} sx={{ ml: 5, mt: 3 }}>
                     <Typography variant='h4' sx={{ fontWeight: 'bold' }}>Airsoft</Typography>
                     <Typography variant='h5' sx={{ fontWeight: 'bold' }}>2016-2019</Typography>
                   </Stack>
@@ -94,6 +105,17 @@ const Career = () => {
                   As an <b>web developer</b>, I collaborated with <i>Asiana Airlines' IT team</i> for several years within the organization. 
                   My responsibilities included creating their flight booking system and gaining expertise in integrating the interface into the CRS (Amadeus).
                 </Typography>
+                <Stack direction="row">
+                  <Badge sx={{ backgroundColor: '#4B4B77', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>JAVA</Badge>
+                  <Badge sx={{ backgroundColor: '#6DB33F', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>Spring</Badge>
+                  <Badge sx={{ backgroundColor: '#F7DF1E', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>JavaScript</Badge>
+                  <Badge sx={{ backgroundColor: '#0769AD', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>jQuery</Badge>
+                  <Badge sx={{ backgroundColor: '#E34F26', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>HTML</Badge>
+                  <Badge sx={{ backgroundColor: '#1572B6', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>CSS</Badge>
+                  <Badge sx={{ backgroundColor: '#F80000', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>Oracle</Badge>
+                  <Badge sx={{ backgroundColor: '#D22128', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>Apache</Badge>
+                  <Badge sx={{ backgroundColor: '#809CC9', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px' }}>Subversion</Badge>
+                </Stack>
               </Stack>
               <Stack direction="column" spacing={2} sx={{ mt: 2, ml: 5}}>
               <Typography variant='h5' sx={{ fontWeight: 'bold', color: '#802c86' }}>Major Projects</Typography>
