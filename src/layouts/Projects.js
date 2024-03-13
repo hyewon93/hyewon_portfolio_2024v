@@ -46,7 +46,7 @@ const Projects = () => {
                       <CodeIcon fontSize='small' sx={{ mr: 1 }} /> CODE
                     </Button>
                   </Link>
-                  <Link to="https://instagramclonehw.netlify.app/" target='_blank' rel='noreferrer'>
+                  <Link to="https://insta-clone-hw.netlify.app/" target='_blank' rel='noreferrer'>
                     <Button sx={{ backgroundColor: '#802c86', color: '#fff', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)', backgroundColor: '#802c86' }}}>
                       <PreviewIcon fontSize='small' sx={{ mr: 1 }}/> DEMO
                     </Button>
@@ -153,7 +153,7 @@ const Projects = () => {
                       <CodeIcon fontSize='small' sx={{ mr: 1 }} /> CODE
                     </Button>
                   </Link>
-                  <Link to="https://instagramclonehw.netlify.app/" target='_blank' rel='noreferrer'>
+                  <Link to="https://insta-clone-hw.netlify.app/" target='_blank' rel='noreferrer'>
                     <Button sx={{ backgroundColor: '#802c86', color: '#fff', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)', backgroundColor: '#802c86' }}}>
                       <PreviewIcon fontSize='small' sx={{ mr: 1 }}/> DEMO
                     </Button>
