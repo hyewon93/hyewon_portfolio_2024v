@@ -2,6 +2,7 @@ import { Badge, Button, Card, CardContent, CardMedia, Container, Stack, Typograp
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
+import easy_tracker_image from "../assets/easy_tracker_image.png";
 import instagram_clone_image from "../assets/instagram_clone_image.png";
 import portfolio_2024v_image from "../assets/portfolio_2024v_image.png";
 import movie_now_image from "../assets/movie_now_image.png";
@@ -24,9 +25,37 @@ const Projects = () => {
   return (
     <>
       <Default>
-        <Container sx={{ display: 'flex', justifyContent: 'center', pt: 20 }}>
-          <Stack direction="row" spacing={5}>
-          <Card sx={{ boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)' }}>
+        <Container sx={{ display: 'flex', justifyContent: 'center', pt: 20 }} overflow={"scroll"}>
+          <Stack direction="row" spacing={5} >
+            <Card sx={{ boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)' }}>
+              <CardMedia component="img" image={easy_tracker_image} sx={{ width: 300, height: 160 }} />
+              <CardContent>
+                <Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>Easy Tracker</Typography>
+                <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
+                  <Badge sx={{ backgroundColor: '#61DAFB', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>React</Badge>
+                  <Badge sx={{ backgroundColor: '#646CFF', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>Vite</Badge>
+                  <Badge sx={{ backgroundColor: '#FFCA28', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>Frebase</Badge>
+                  <Badge sx={{ backgroundColor: '#007FFF', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>ChakraUI</Badge>
+                </Stack>
+                <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
+                  <Badge sx={{ backgroundColor: '#F7DF1E', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>JavaScript</Badge>
+                  <Badge sx={{ backgroundColor: '#1572B6', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>CSS</Badge>
+                </Stack>
+                <Stack direction="row" sx={{ mt: 6, display: 'flex', justifyContent: 'space-between' }}>
+                  <Link to="https://github.com/hyewon93/easy_tracker" target='_blank' rel='noreferrer'>
+                    <Button sx={{ border: '1.5px solid #802c86', color: '#802c86', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)' }}}>
+                      <CodeIcon fontSize='small' sx={{ mr: 1 }} /> CODE
+                    </Button>
+                  </Link>
+                  <Link to="https://easytracker1.netlify.app/" target='_blank' rel='noreferrer'>
+                    <Button sx={{ backgroundColor: '#802c86', color: '#fff', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)', backgroundColor: '#802c86' }}}>
+                      <PreviewIcon fontSize='small' sx={{ mr: 1 }}/> DEMO
+                    </Button>
+                  </Link>
+                </Stack>
+              </CardContent>
+            </Card>
+            <Card sx={{ boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)' }}>
               <CardMedia component="img" image={instagram_clone_image} sx={{ width: 300, height: 160 }} />
               <CardContent>
                 <Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>Instagram Clone</Typography>
@@ -108,31 +137,41 @@ const Projects = () => {
                 </Stack>
               </CardContent>
             </Card>
-            <Card sx={{ boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)' }}>
-              <CardMedia component="img" image={php_image} sx={{ width: 300 }} />
-              <CardContent>
-                <Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>PHP Collection</Typography>
-                <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
-                  <Badge sx={{ backgroundColor: '#777BB4', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>PHP</Badge>
-                </Stack>
-                <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
-                  <Badge sx={{ backgroundColor: '#fff', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>blank</Badge>
-                </Stack>
-                <Stack direction="row" sx={{ mt: 6, display: 'flex', justifyContent: 'space-between' }}>
-                  <Link to="https://github.com/hyewon93/PHP" target='_blank' rel='noreferrer'>
-                    <Button sx={{ border: '1.5px solid #802c86', color: '#802c86', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)' }}}>
-                      <CodeIcon fontSize='small' sx={{ mr: 1 }} /> CODE
-                    </Button>
-                  </Link>
-                </Stack>
-              </CardContent>
-            </Card>
+            
           </Stack>
         </Container>
       </Default>
       <Mobile>
         <Container sx={{ overflowX: 'scroll', pt: 25 }}>
           <Stack direction="row" spacing={3} sx={{ display: 'flex', width: 1000 }}>
+            <Card sx={{ boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)', width: 300 }}>
+              <CardMedia component="img" image={easy_tracker_image} sx={{ width: 235 }} />
+              <CardContent>
+                <Typography variant='subtitle1' sx={{ fontWeight: 'bold' }}>Easy Tracker</Typography>
+                <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
+                  <Badge sx={{ backgroundColor: '#61DAFB', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>React</Badge>
+                  <Badge sx={{ backgroundColor: '#646CFF', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>Vite</Badge>
+                  <Badge sx={{ backgroundColor: '#FFCA28', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>Frebase</Badge>
+                </Stack>
+                <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
+                  <Badge sx={{ backgroundColor: '#007FFF', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>ChakraUI</Badge>
+                  <Badge sx={{ backgroundColor: '#F7DF1E', color: '#000', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>JavaScript</Badge>
+                  <Badge sx={{ backgroundColor: '#1572B6', color: '#fff', mr: 0.5, fontSize: '12px', pl: 1, pr: 1, pt: 0.5, pb: 0.5, borderRadius: '7px'}}>CSS</Badge>
+                </Stack>
+                <Stack direction="row" sx={{ mt: 6, display: 'flex', justifyContent: 'space-between' }}>
+                  <Link to="https://github.com/hyewon93/easy_tracker" target='_blank' rel='noreferrer'>
+                    <Button sx={{ border: '1.5px solid #802c86', color: '#802c86', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)' }}}>
+                      <CodeIcon fontSize='small' sx={{ mr: 1 }} /> CODE
+                    </Button>
+                  </Link>
+                  <Link to="https://easytracker1.netlify.app/" target='_blank' rel='noreferrer'>
+                    <Button sx={{ backgroundColor: '#802c86', color: '#fff', fontSize: '12px', '&:hover': { transform: 'Scale(1.05)', backgroundColor: '#802c86' }}}>
+                      <PreviewIcon fontSize='small' sx={{ mr: 1 }}/> DEMO
+                    </Button>
+                  </Link>
+                </Stack>
+              </CardContent>
+            </Card>
             <Card sx={{ boxShadow: '10px 10px 5px rgb(0, 0, 0, 0.2)', width: 300 }}>
               <CardMedia component="img" image={instagram_clone_image} sx={{ width: 235 }} />
               <CardContent>
